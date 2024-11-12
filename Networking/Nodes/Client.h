@@ -1,3 +1,8 @@
+/*
+ The Client struct is used as a tool for connecting to and interacting with servers.
+ In general, client objects are used to send requests to server APIs.
+ */
+
 #ifndef Client_h
 #define Client_h
 
