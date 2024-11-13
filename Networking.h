@@ -7,5 +7,6 @@
 
 #include "Networking/Nodes/Server.h"
 #include "Networking/Nodes/Client.h"
+#include "Networking/Nodes/PeerToPeer.h"
 
 #endif /* Networking_h */

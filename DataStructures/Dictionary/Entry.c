@@ -18,7 +18,7 @@ struct Entry entry_constructor(void *key, unsigned long key_size, void *value, u
 } 
 
 // the destructor must free the key and value of the given entry
-void entry_distructor(struct Entry *entry)
+void entry_destructor(struct Entry *entry)
 {
     free(entry->key);
     free(entry->value);

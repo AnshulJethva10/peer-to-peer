@@ -1,7 +1,7 @@
 #include "Client.h"
 
 #include <stdlib.h>
-#include <arap/inet.h>
+#include <arpa/inet.h>
 #include <string.h>
 #include <unistd.h>
 

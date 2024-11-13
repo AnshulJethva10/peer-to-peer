@@ -53,9 +53,9 @@ struct Server server_constructor(int domain, int service, int protocol, unsigned
     return server;
 }
 
-void register_routes_server(struct Server server, char * (*route_function)(void *arg), char *path)
+void register_routes_server(struct Server *server, char *(*route_function)(void *arg), char *path)
 {
     struct ServerRoute route;
     route.route_function = route_function;
-    server.routes.insert(&server.routes, path, sizeof(char[strlen(path)]), &route, sizeof(route));
+    server->routes.insert(&server->routes, path, sizeof(char[strlen(path)]), &route, sizeof(route));
 }
